@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudfare.com/ajax/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="script" href="script.js">
+  <meta name="theme-color" content="#491088">
+  <title>Smart Home Interface</title>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <h1><i class="fas fa-house-chimney"></i> Smart Home Control</h1>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="container">
+
+    <!-- ===== LIGHTING SECTION ===== -->
+    <section id="lighting" class="control-section">
+      <h2><i class="fas fa-lightbulb"></i> Lighting</h2>
+    
+      <div class="toggle-wrapper">
+        <label class="toggle">
+          <input type="checkbox" id="lightToggle">
+          <span class="slider"></span>
+        </label>
+        <span class="toggle-label">Lights</span>
+      </div>
+    </section>
+
+    <!-- ===== TEMPERATURE SECTION ===== -->
+    <div class="temp-buttons">
+      <button class="temp-btn">
+        <i class="fas fa-arrow-up"></i> Increase
+      </button>
+  
+      <button class="temp-btn">
+        <i class="fas fa-arrow-down"></i> Decrease
+      </button>
+  
+      <button class="temp-btn">
+        <i class="fas fa-thermometer-half"></i> Set 22°C
+      </button>
+    </div>
+  
+    <div class="temp-slider-wrapper">
+      <p>Temperature Level</p>
+      <input type="range" min="10" max="30" value="22" class="temp-slider">
+    </div>
+  </section>
+
+    <!-- ===== MUSIC SECTION ===== -->
+    <section id="music" class="control-section">
+      <h2><i class="fas fa-music"></i> Music</h2>
+    
+      <div class="music-controls">
+        <button class="music-btn"><i class="fas fa-play">Play</i></button>
+        <button class="music-btn"><i class="fas fa-pause">Pause</i></button>
+        <button class="music-btn"><i class="fas fa-forward">Next</i></button>
+      </div>
+    
+      <div class="volume-slider-wrapper">
+        <p>Volume</p>
+        <input type="range" min="0" max="100" value="50" class="volume-slider">
+      </div>
+    </section>
+    
+
+  </main>
+
+  <script src="script.js"></script>
+  <button id="installBtn" style="display:none;">Install App</button>
+
+</body>
+</html>
+
+
